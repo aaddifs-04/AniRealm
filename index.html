@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AniRealm</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Anime Archive</h1>
+      <form id="search-form">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for an anime..."
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="favourites.html">Favourites</a>
+        <a href="watch-later.html">Watch later</a>
+      </nav>
+    </header>
+    <main id="anime-list">
+      <!-- Animes will be dynamically inserted here -->
+    </main>
+    <footer>
+      <p>&copy; 2024 AniRealm</p>
+    </footer>
+
+    <script
+      src="https://cdn.cai.tools.sap/webchat/webchat.js"
+      channelId="2f575288-a970-4719-8a80-9284ec41b437"
+      token="2e2cd7206a5d47fa8289832a3b130489"
+      id="cai-webchat"
+    ></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

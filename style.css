@@ -1,0 +1,184 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle, #500b71 0%, #1a111d 50%);
+    color: #c3c3c6;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #1a111d;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(129, 122, 122, 0.3);
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 32px;
+}
+
+nav {
+    background-color: #2a1a2e;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(129, 122, 122, 0.3);
+}
+
+nav a {
+    color: #d0cdc4;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.anime-card, .anime-item {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 220px;
+    text-align: center;
+    box-shadow: 2px 5px 15px rgba(235, 187, 234, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.anime-card img, .anime-item img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.anime-card h2, .anime-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.anime-card:hover, .anime-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Adjusting layout to match home page */
+#genre-anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+#genre-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#genre-list li {
+    margin: 0 10px;
+}
+
+#genre-list a {
+    text-decoration: none;
+    color: #c3c3c6;
+    font-weight: bold;
+    background-color: #331938;
+    padding: 8px 16px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px #72727a;
+    transition: background-color 0.3s;
+}
+
+#genre-list a:hover {
+    background-color: #444;
+}
+
+/* Back to Home Button */
+.back-to-home {
+    display: inline-block;
+    color: #cec9c9;
+    background-color: #37064e;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.back-to-home:hover {
+    background-color: #444;
+}
+#search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #700b97;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a19f9c;
+}
+
+
+footer {
+    background-color: #1a111d;
+    color: #c3c3c6;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
